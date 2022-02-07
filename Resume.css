@@ -1,0 +1,97 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-gap: 20px;
+    background-color: #ffd3a1;
+    padding: 10px 115px 10px;
+}
+img {
+    border: 10px solid black;
+}
+/* #container {
+    margin-top: 20px;
+	margin-left:auto;
+    margin-right:auto;
+    height:100%;
+    width:790px;
+	padding: 20px 200px 20px;
+	border-radius: 5px;
+	background-color: #ffd3a1;
+	text-align: left;
+    border-block: solid;
+} */
+.leftpane {
+    float: left;
+    border-collapse: collapse;
+}
+#rightpane {
+    position: relative;
+    float: relative;
+    border-collapse: collapse;
+}
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+h2 {
+    font-size: 14px;
+    margin-bottom: -6px;
+}
+h3 {
+    font-size: 24px;
+    line-height: 10px;
+    height: 11px;
+    text-indent: 5px;
+}
+h4 {
+    font-size:17px;
+    text-indent: 15px;
+    line-height: 20px;
+}
+h5 {
+    font-size: 15px;
+    text-indent: 20px;
+    height: 8px;
+}
+h6 {
+    font-size: 15px;
+    line-height: 0px;
+    height:0px;
+    text-indent: 20px;
+}        
+.content {
+    text-align:left;
+    background-color: blanchedalmond;
+    border-width: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 0px 20px 30px;
+    border-color:black;
+    border-style: solid;
+    overflow-wrap: break-word;
+}
+.content-education {
+    background-color: blanchedalmond;
+    border-width: 10px;
+    border-color:black;
+    border-style: solid;
+    overflow-wrap: break-word;
+}
+#content-experiences {
+    background-color:blanchedalmond;
+    border-width: 10px;
+    border-color: black;
+    border-style: solid;
+}
+/*responsive design going to two column to one column for small screen*/
+@media only screen and (max-width: 900px) {    
+    .grid-container {
+        grid-template-columns: auto;
+        padding: 10px;
+    }
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
