@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<head>
+    <title>Jonathan Nguyen Resume</title>
+    <!-- <link rel="stylesheet" href="reset.css"> -->
+    <link rel="stylesheet" href="Resume.css">
+</head>
+<body>
+    <div class="grid-container">
+        <div class="leftpane">
+            <img src="me4.jpg" alt="Jonathan Nguyen" width="215" height="310"><br>
+            <div class="content">
+                <h1 id="date"></h1>
+            </div>            
+            <div class="content">
+                <h1>Jonathan T. Nguyen</h1>
+                <h2>10576 Alamo St. NE Blaine, MN 55449</h2>
+                <h2>(763) 447-0518 | njonathan990@gmail.com</h2>
+            </div>
+            <div class="content-education"><h3><u>Education</u></h3>
+                <div class="content-degree">
+                    <h4>Metropolitan State University, <i>St. Paul, MN</i></h4>
+                    <div class="block-date">
+                        <h5>Bachelor of Science, Accounting</h5>
+                        <h6>May 2017</h6>           
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rightpane">
+            <div id="content-experiences"><h3><u>Work Experiences</u></h3>
+                <div id="content-lgn">
+                    <h4>Lockridge Grindal Nauen P.L.L.P - <i>Minneapolis, MN</i></h4>
+                    <div class="block-date">
+                        <h5>Accounts Receivable</h5>
+                        <h6>May 2017 - Current</h6>
+                    </div>
+                    <div class="block-content">
+                        <ul>
+                            <li>Perform day-to-day operational financial transactions, including verifying, classifying, computing, posting and recording accounts receivables’ data.</li>
+                            <li>Reconcile accounts receivable ledger to ensure that all payments are accounted for and properly posted on a monthly/weekly/daily basis. </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="content-lgn2">
+                    <h4>Lockridge Grindal Nauen P.L.L.P. - <i>Minneapolis, MN</i></h4>
+                    <div class="block-date">
+                        <h5>Accounting Clerk</h5>
+                        <h6>September 2016 - May 2017</h6>                
+                    </div>
+                    <div class="block-content">
+                        <ul>
+                            <li>Provided accounting support to accounts payable and accounts receivable managers.</li>
+                            <li>Ensured document files are complete and maintained as needed, handled accounts payable duties such as issuing checks and compile and sorting invoices.</li>
+                            <li>Assisted Controller with auditing and creating.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="content-marrow">
+                    <h4>National Marrow Donor Program - <i>Minneapolis, MN</i></h4>
+                    <div class="block-date">
+                        <h5>Data Entry Clerk</h5>
+                        <h6>September 2015 - January 2016</h6>
+                    </div> 
+                    <div class="block-content">
+                        <ul>
+                            <li>Processed customer and account source documents by reviewing data for deficiencies.</li>
+                            <li>Entered customer and account data by inputting alphabetic and numeric information on keyboard according to screen format.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="content-green">
+                    <h4>Green Tree Solutions - <i>St. Paul, MN</i></h4>
+                    <div class="block-date">
+                        <h5>Accounts Payable Clerk</h5>
+                        <h6>May 2014 - January 2015</h6>
+                    </div>
+                    <div class="block-content">
+                        <ul>
+                            <li>Assisted Accounts Payable Manager with auditing and processing monthly reports.</li>
+                            <li>Created or updated vendor accounts through information of W-9 form sent by vendors into the database system.</li>
+                            <li>Researched and resolved any outstanding balances on accounts, communicated by telephone and emailing with vendors.</li>
+                            <li>Paid vendors by verifying federal ID numbers; scheduled and prepared checks; resolved purchase order, contract, invoice, or payment discrepancies and documentation; insured credit is received for outstanding memos; issued stop-payments or purchase order amendments.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>    
+        </div>      
+    </div>
+    <script>
+        const today = new Date();
+        const dayList = [
+            "Sunday", 
+            "Monday", 
+            "Tuesday", 
+            "Wednesday", 
+            "Thursday", 
+            "Friday", 
+            "Saturday"
+        ];
+        const monthList = [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"
+        ];
+        const day = today.getDay();
+        const month = today.getMonth();
+        const date = today.getDate();
+        const year = today.getFullYear();
+        document.getElementById("date").innerHTML = "Today is " + dayList[day] + ", " + monthList[month] + " " + date + ", " + year;
+    </script>
+</body>
+</html>
